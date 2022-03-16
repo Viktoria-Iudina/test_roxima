@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ed145b;
+  padding: 1em 5em;
+}
+header p {
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 5em;
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #141845;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline;
+}
+nav li:not(:last-child) {
+  padding: 0 1em;
+}
+nav li a {
+  text-decoration: none;
+  color: #141845;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/slider.jpg");
+}
+.banner .banner-content {
+  color: #fff;
+  text-align: center;
+  padding: 15em;
+}
+.banner h1 {
+  font-size: 3rem;
+  padding-bottom: 0.3em;
+}
+.banner p {
+  margin-bottom: 3em;
+}
+.banner a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+
+.services {
+  text-align: center;
+  margin: 6em 5em;
+}
+.services p:first-child {
+  opacity: 0.33;
+}
+.services .services-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+.services .services-blocks > div {
+  padding: 1.5em;
+  text-align: left;
+}
+.services .services-blocks i {
+  color: #ed145b;
+  font-size: 3rem;
+  padding-bottom: 0.3em;
+}
+
+.banner-two {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/hero.jpg");
+  background-attachment: scroll;
+  font-size: 1em;
+}
+.banner-two .banner-content {
+  color: #fff;
+  text-align: center;
+  padding: 15em;
+}
+.banner-two h1 {
+  font-size: 3rem;
+  padding-bottom: 0.3em;
+}
+.banner-two p {
+  margin-bottom: 3em;
+}
+.banner-two a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+
+.team {
+  margin: 6em 5em;
+  text-align: center;
+}
+.team .team-members {
+  display: flex;
+  justify-content: space-between;
+}
+.team .team-members > div {
+  padding: 1.5em;
+}
+.team .team-members img {
+  width: 100%;
+}
+.team .team-members .social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em;
+  margin-top: 1.5em;
+}
+.team .team-members svg {
+  fill: #fff;
+}
+.team .team-members .linkedin {
+  padding: 0.66667em 1.5em;
+  border-radius: 20px;
+  background-color: #0f66c3;
+  margin-right: 0.5em;
+}
+.team .team-members .twitter {
+  padding: 0.66667em 1.5em;
+  border-radius: 20px;
+  background-color: #1ea2f2;
+  margin-right: 0.5em;
+}
+.team .team-members .another {
+  padding: 0.66667em 1.5em;
+  border-radius: 20px;
+  background-color: #1bab6c;
+}
+
+.prices {
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.prices h2 {
+  padding-top: 5em;
+}
+.prices p,
+.prices li {
+  color: #5e5e5e;
+}
+.prices .price-plans {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 6em;
+}
+.prices .price-plans > div {
+  padding: 3em;
+  background-color: #fff;
+  border: 2px solid #dedede;
+}
+.prices svg {
+  width: 19px;
+  height: 19px;
+  margin-right: 0.5em;
+}
+.prices ul {
+  margin-top: 1em;
+}
+.prices li {
+  list-style: none;
+  text-align: left;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #dedede;
+  line-height: 1.615;
+}
+.prices .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2em 0;
+  color: black;
+}
+.prices a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+
+.clients-content {
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/flatiron.jpg");
+  color: #fff;
+}
+.clients-content h2,
+.clients-content p {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-content h2 .banner-content,
+.clients-content p .banner-content {
+  color: #fff;
+  text-align: center;
+  padding: 15em;
+}
+.clients-content h2 h1,
+.clients-content p h1 {
+  font-size: 3rem;
+  padding-bottom: 0.3em;
+}
+.clients-content h2 p,
+.clients-content p p {
+  margin-bottom: 3em;
+}
+.clients-content h2 a,
+.clients-content p a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+.clients-content h2 {
+  padding-top: 6em;
+  padding-bottom: 0.3em;
+}
+
+.clients-logos {
+  margin: 6em 5em;
+}
+
+.clients-logos,
+.testimonials-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6em;
+  color: #5e5e5e;
+}
+.clients-logos .testimonial-text,
+.testimonials-blocks .testimonial-text {
+  font-style: italic;
+}
+.clients-logos .name,
+.testimonials-blocks .name {
+  font-weight: 700;
+}
+.clients-logos .testimonial-client-photo,
+.testimonials-blocks .testimonial-client-photo {
+  border-radius: 50%;
+  width: 15%;
+  padding: 1em 0;
+}
+.clients-logos > div,
+.testimonials-blocks > div {
+  padding: 0 1em;
+}
+
+.testimonials-blocks {
+  margin: 0 6em;
+}
+
+.testimonials h2 {
+  text-align: center;
+}
+.testimonials .paragraph {
+  text-align: center;
+}
+.testimonials > h2 {
+  padding-bottom: 0.5em;
+}
+.testimonials > p {
+  padding-bottom: 2em;
+}
+
+.latest-articles {
+  background-color: #f8f8f8;
+  padding: 5em 0;
+}
+.latest-articles > h2 {
+  text-align: center;
+}
+.latest-articles > p {
+  text-align: center;
+  color: #5e5e5e;
+}
+.latest-articles .article {
+  border: 2px solid #dedede;
+}
+.latest-articles .article > h4 {
+  padding-top: 1.5em;
+}
+.latest-articles .article > a {
+  margin-bottom: 1em;
+}
+.latest-articles .article > h4,
+.latest-articles .article > p,
+.latest-articles .article > a {
+  margin: 0 2em;
+}
+.latest-articles .latest-articles-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 6em;
+  background-color: #fff;
+}
+.latest-articles .latest-articles-container .article1 {
+  width: 30%;
+}
+.latest-articles .latest-articles-container .article1 .image {
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/b5-615x410.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+.latest-articles .latest-articles-container .article1 p {
+  font-size: 16px;
+  color: #5e5e5e;
+  margin-bottom: 15px;
+}
+.latest-articles .latest-articles-container .article1 a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+.latest-articles .latest-articles-container .article2 {
+  width: 30%;
+}
+.latest-articles .latest-articles-container .article2 .image {
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/b3-615x410.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+.latest-articles .latest-articles-container .article2 p {
+  font-size: 16px;
+  color: #5e5e5e;
+  margin-bottom: 15px;
+}
+.latest-articles .latest-articles-container .article2 a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+.latest-articles .latest-articles-container .article3 {
+  width: 30%;
+}
+.latest-articles .latest-articles-container .article3 .image {
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/b2-615x410.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+.latest-articles .latest-articles-container .article3 p {
+  font-size: 16px;
+  color: #5e5e5e;
+  margin-bottom: 15px;
+}
+.latest-articles .latest-articles-container .article3 a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+
+/*# sourceMappingURL=style-dist-dist.css.map */

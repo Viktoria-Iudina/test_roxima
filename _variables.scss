@@ -1,0 +1,252 @@
+$primary: #141845;
+$secondary: #ed145b;
+$sectopns-background-grey: #f8f8f8;
+$text-paragraph: #5e5e5e;
+
+$site-title: 3rem;
+$titles-size: 1.5rem;
+$titles-weight: 700;
+$icons-size: 3rem;
+
+@mixin flexA {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ed145b;
+  padding: 1em 2em;
+}
+
+@mixin padding-icons {
+  padding: 0.66667em 1.5em;
+  border-radius: 20px;
+}
+
+@mixin icons-pricing-plans {
+  width: 19px;
+  height: 19px;
+}
+
+@mixin margin-sections-with-cards {
+  margin: 6em 5em;
+}
+
+@mixin border-cards {
+  border: 2px solid #dedede;
+}
+
+@mixin header {
+  @include flexA;
+  background-color: $secondary;
+  padding: 1em 5em;
+  p {
+    color: white;
+  }
+}
+
+@mixin nav-bar {
+  @include flexA;
+  padding: 2em 5em;
+  .logo {
+    font-size: $titles-size;
+    font-weight: $titles-weight;
+    color: $primary;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline;
+    &:not(:last-child) {
+      padding: 0 1em;
+    }
+    a {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}
+
+@mixin bg {
+  // background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/slider.jpg");
+  background-size: cover;
+  background-position: center;
+  @include flexC;
+
+  .banner-content {
+    color: #fff;
+    text-align: center;
+    padding: 15em;
+  }
+  h1 {
+    font-size: $site-title;
+    padding-bottom: 0.3em;
+  }
+  p {
+    margin-bottom: 3em;
+  }
+  a {
+    @include button;
+  }
+}
+
+@mixin services {
+  text-align: center;
+  @include margin-sections-with-cards;
+
+  p:first-child {
+    opacity: 0.33;
+  }
+
+  .services-blocks {
+    @include flexA;
+    > div {
+      padding: 1.5em;
+      text-align: left;
+    }
+    i {
+      color: #ed145b;
+      font-size: $icons-size;
+      padding-bottom: 0.3em;
+    }
+  }
+}
+
+@mixin team {
+  @include margin-sections-with-cards;
+  text-align: center;
+
+  .team-members {
+    @include flexA;
+    > div {
+      padding: 1.5em;
+    }
+    img {
+      width: 100%;
+    }
+    .social-icons {
+      @include flexA;
+      padding: 0 5em;
+      margin-top: 1.5em;
+    }
+    svg {
+      fill: #fff;
+    }
+    .linkedin {
+      @include padding-icons;
+      background-color: rgb(15, 102, 195);
+      margin-right: 0.5em;
+    }
+    .twitter {
+      @include padding-icons;
+      background-color: #1ea2f2;
+      margin-right: 0.5em;
+    }
+    .another {
+      @include padding-icons;
+      background-color: #1bab6c;
+    }
+  }
+}
+
+@mixin pricing-plans {
+  text-align: center;
+  background-color: $sectopns-background-grey;
+
+  h2 {
+    padding-top: 5em;
+  }
+  p,
+  li {
+    color: $text-paragraph;
+  }
+
+  .price-plans {
+    @include flexA;
+    margin: 3em 6em;
+    > div {
+      padding: 3em;
+      background-color: #fff;
+      @include border-cards;
+    }
+  }
+  svg {
+    @include icons-pricing-plans;
+    margin-right: 0.5em;
+  }
+  ul {
+    margin-top: 1em;
+  }
+  li {
+    list-style: none;
+    text-align: left;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #dedede;
+    line-height: 1.615;
+  }
+  .price {
+    font-size: $titles-size;
+    font-weight: $titles-weight;
+    margin: 2em 0;
+    color: black;
+  }
+  a {
+    @include button;
+  }
+}
+
+@mixin clients {
+  .testimonial-text {
+    font-style: italic;
+  }
+  .name {
+    font-weight: $titles-weight;
+  }
+  .testimonial-client-photo {
+    border-radius: 50%;
+    width: 15%;
+    padding: 1em 0;
+  }
+}
+
+@mixin testimonials {
+  h2 {
+    text-align: center;
+  }
+  .paragraph {
+    text-align: center;
+  }
+}
+
+@mixin article($src) {
+  width: 30%;
+  .image {
+    background-image: url($src);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+  }
+  p {
+    font-size: 16px;
+    color: $text-paragraph;
+    margin-bottom: 15px;
+  }
+  a {
+    @include button;
+  }
+}

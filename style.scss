@@ -1,0 +1,121 @@
+@import "_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+header {
+  @include header;
+}
+
+nav {
+  @include nav-bar;
+}
+
+.banner {
+  @include bg;
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/slider.jpg");
+}
+
+.services {
+  @include services;
+}
+
+.banner-two {
+  @include bg;
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/hero.jpg");
+  background-attachment: scroll;
+  font-size: 1em;
+}
+
+.team {
+  @include team;
+}
+
+.prices {
+  @include pricing-plans;
+}
+
+.clients-content {
+  background-image: url("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/flatiron.jpg");
+  color: #fff;
+
+  h2,
+  p {
+    @include bg;
+  }
+  h2 {
+    padding-top: 6em;
+    padding-bottom: 0.3em;
+  }
+}
+.clients-logos {
+  @include margin-sections-with-cards;
+}
+.clients-logos,
+.testimonials-blocks {
+  @include clients;
+  @include flexA;
+  padding-bottom: 6em;
+  color: $text-paragraph;
+  > div {
+    padding: 0 1em;
+  }
+}
+.testimonials-blocks {
+  margin: 0 6em;
+}
+.testimonials {
+  @include testimonials;
+   >h2 {
+    padding-bottom: 0.5em;
+  }
+  >p {
+    padding-bottom: 2em;
+  }
+}
+
+.latest-articles {
+  background-color: $sectopns-background-grey;
+  padding: 5em 0;
+  
+  >h2 {
+    text-align: center;
+  }
+  >p {
+    text-align: center;
+    color: $text-paragraph;
+  }
+  .article {
+    @include border-cards;
+
+    >h4 {
+      padding-top: 1.5em;
+    }
+    >a{
+      margin-bottom: 1em;
+    }
+    >h4,
+    >p,
+    >a {
+      margin: 0 2em;
+    }
+
+  }
+  .latest-articles-container {
+    @include flexA;
+    margin: 1em 6em;
+    background-color: #fff;
+        
+    .article1 {
+      @include article("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/b5-615x410.jpg");
+    }
+    .article2 {
+      @include article("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/b3-615x410.jpg");
+    }
+    .article3 {
+      @include article("https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/b2-615x410.jpg");
+    }
+  }
+}
